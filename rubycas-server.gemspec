@@ -34,7 +34,6 @@ to build the LOCALE_LC files.
 
 }
 
-  s.add_dependency("ffi", "~> 1.0.10")
   s.add_dependency("activerecord", "~> 3.2.1")
   s.add_dependency("activesupport", "~> 3.2.1")
   s.add_dependency("sinatra", "~> 1.0")
