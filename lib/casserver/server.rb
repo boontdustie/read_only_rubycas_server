@@ -34,7 +34,7 @@ module CASServer
     # Strip the config.uri_path from the request.path_info...
     # FIXME: do we really need to override all of Sinatra's #static! to make this happen?
     def static!
-      return if (public_dir = settings.public).nil?
+      #return if (public_dir = settings.public).nil?
       public_dir = File.expand_path(public_dir)
       
       path = File.expand_path(public_dir + unescape(request.path_info.gsub(/^#{settings.config[:uri_path]}/,'')))
